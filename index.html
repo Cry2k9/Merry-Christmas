@@ -1,37 +1,31 @@
 <!DOCTYPE html>
-<html lang="vi">
-
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pokédex Calculator</title>
-    <link rel="stylesheet" href="./styles.css">
+<meta charset="UTF-8">
+<title>Fully Decorated Christmas Tree</title>
+<link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-    <div class="pokedex-container">
-        <div class="screen-section" id="screen">
-            <img id="pokemonImage" class="pokemon-img" src="" alt="Pokémon" style="display: none;">
-        </div>
+<svg viewBox="0 0 300 440" class="scene">
 
-        <div class="info-section">
-            <h2>Pokédex</h2>
-            <input type="text" id="pokemonName" placeholder="Nhập tên Pokémon...">
-            <button onclick="fetchPokemon()">Tìm kiếm</button>
+  <!-- ⭐ Top star -->
+  <polygon id="topStar" points="150,22 155,36 170,36 158,46
+            162,60 150,52 138,60 142,46 130,36 145,36" />
 
-            <div class="pokemon-info" id="pokemonInfo">
-                <p><strong>Tên:</strong> __</p>
-                <p><strong>Loại:</strong> __</p>
-                <p><strong>Chiều cao:</strong> __</p>
-                <p><strong>Cân nặng:</strong> __</p>
-                <p><strong>Mô tả:</strong> __</p>
-            </div>
-        </div>
-    </div>
+  <!-- Tree stars -->
+  <g id="leftStars"></g>
+  <g id="rightStars"></g>
 
-    <script src="./script.js"></script>
+  <!-- Decorations -->
+  <g id="lights"></g>
+  <g id="baubles"></g>
+  <g id="garlands"></g>
+  <g id="candy"></g>
+  <g id="bells"></g>
 
+</svg>
+
+<script src="script.js"></script>
 </body>
-
 </html>
