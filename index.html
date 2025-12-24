@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokédex Calculator</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+
+    <div class="pokedex-container">
+        <div class="screen-section" id="screen">
+            <img id="pokemonImage" class="pokemon-img" src="" alt="Pokémon" style="display: none;">
+        </div>
+
+        <div class="info-section">
+            <h2>Pokédex</h2>
+            <input type="text" id="pokemonName" placeholder="Nhập tên Pokémon...">
+            <button onclick="fetchPokemon()">Tìm kiếm</button>
+
+            <div class="pokemon-info" id="pokemonInfo">
+                <p><strong>Tên:</strong> __</p>
+                <p><strong>Loại:</strong> __</p>
+                <p><strong>Chiều cao:</strong> __</p>
+                <p><strong>Cân nặng:</strong> __</p>
+                <p><strong>Mô tả:</strong> __</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+
+</body>
+
+</html>
